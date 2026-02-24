@@ -34,7 +34,7 @@ export default function Services() {
         </div>
       </div>
     </div>
-        <div className="container col-md-4"> 
+        <div className=" col-md-4"> 
           <div className="card h-100 shadow-sm text-center">
             <div className="card-body">
               <div className="mb-3">
@@ -49,13 +49,13 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="container col-md-4"> 
+        <div className="col-md-4"> 
           <div className="card h-100 shadow-sm text-center">
             <div className="card-body">
               <div className="mb-3">
                 <i className="bi bi-search fs-1 text-primary"></i>
               </div>
-                <h2 className="card-title">Developpement web</h2>
+                <h2 className="card-title">Référencement</h2>
                 <p className="card-text">
                   Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
                commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,

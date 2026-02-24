@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease;
+}
