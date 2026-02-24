@@ -1,13 +1,14 @@
 export default function Services() {
   return (
   <div style={{paddingTop: "56px"}}>
+    {/*banner*/}
     <section style={{
-      paddingTop: "56px",
       backgroundImage: "url('/images/banner.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       height: "300px",}}>
     </section>
+    {/*titre*/}
       <div style={{textAlign: "center",color: "black" }}>
         <h1>Mon offre de services</h1>
          <p>Voici les prestations sur les quelles
@@ -15,8 +16,10 @@ export default function Services() {
          </p>
          <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
       </div>
+      {/*cards*/}
+<div className="container" style={{marginBottom: "80px"}}>   
   <div className="row">
-    <div className="container col-md-4"> 
+    <div className="col-md-4"> 
       <div className="card h-100 shadow-sm text-center">
         <div className="card-body">
               <div className="mb-3">
@@ -62,6 +65,7 @@ export default function Services() {
           </div>
         </div>
   </div>
+</div> 
   </div>
 
   ) 
