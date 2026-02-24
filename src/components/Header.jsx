@@ -31,6 +31,9 @@ export default function Header() {
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </li>
+             <li className="nav-item">
+              <NavLink className="nav-link" to="/Mentions">Mentions legales</NavLink>
+            </li>
           </ul>
         </div>
       </div>

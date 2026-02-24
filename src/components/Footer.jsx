@@ -45,22 +45,22 @@ export default function Footer() {
           <p>Mes dernières réalisations</p>
           <ul className="list-unstyled">
              <li className="nav-item">
-              <NavLink className="nav-link" to="/">fresh food</NavLink>
+              <NavLink className="nav-link" to="/Portfolio">fresh food</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/">Restaurant Akira</NavLink>
+              <NavLink className="nav-link" to="/Portfolio">Restaurant Akira</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/">Espace bien être</NavLink>
+              <NavLink className="nav-link" to="/Portfolio">Espace bien être</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/">SEO</NavLink>
+              <NavLink className="nav-link" to="/Portfolio">SEO</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/">Création API</NavLink>
+              <NavLink className="nav-link" to="/Portfolio">Création API</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/">Maquette d'un site</NavLink>
+              <NavLink className="nav-link" to="/Portfolio">Maquette d'un site</NavLink>
             </li>
           </ul>
 

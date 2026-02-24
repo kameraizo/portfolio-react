@@ -8,3 +8,11 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
   transition: all 0.3s ease;
 }
+body {
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 600 !important;
+}
