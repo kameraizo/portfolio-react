@@ -17,7 +17,7 @@ export default function Services() {
          <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
       </div>
       {/*cards*/}
-<div className="container" style={{marginBottom: "80px"}}>   
+<div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>   
   <div className="row">
     <div className="col-md-4"> 
       <div className="card h-100 shadow-sm text-center">
