@@ -103,7 +103,7 @@ export default function Home() {
       <div className="modal-dialog modal-dialog-centered">
       <div className="modal-content">
         <div className="modal-header">
-          <h5 className="modal-title">Mon profil GitHub</h5>
+          <h3 className="modal-title">Mon profil GitHub</h3>
           <button className="btn-close" onClick={() => setShowModal(false)}></button>
         </div>
         <div className="modal-body">
