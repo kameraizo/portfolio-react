@@ -48,7 +48,7 @@ export default function Home() {
         
           <div className="col-md-6">
             <h2>A propos</h2>
-            <hr />
+            <hr style={{color:"blue", borderWidth: "3px"}}/>
             <img src="/images/john-doe-about.jpg" alt="John Doe" className="img-fluid mb-3" />
             <p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
                commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
@@ -66,12 +66,33 @@ export default function Home() {
           </div>
         
 
-        <div className="col-md-6">
+        <div className="col-md-6"> 
           <h2>Mes compètences</h2>
-          <hr />
-          
+            <hr style={{color:"blue", borderWidth: "3px",}}/>
+            <p style={{marginBottom:"0"}}>HTML.5 90%</p>
+          <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div className="progress-bar bg-danger" style={{width: "90%"}}></div>
+          </div>
+            <p style={{marginBottom:"0", paddingTop:"20px"}}>CSS.3 80%</p>
+          <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div className="progress-bar bg-info" style={{width: "80%"}}></div>
+          </div>
+            <p style={{marginBottom:"0", paddingTop:"20px"}}>JavaScript 70%</p>
+          <div className="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div className="progress-bar bg-warning" style={{width: "70%"}}></div>
+          </div>
+              <p style={{marginBottom:"0", paddingTop:"20px"}}>PHP 2%</p>
+          <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div className="progress-bar bg-success" style={{width: "2%"}}></div>
+          </div>
+              <p style={{marginBottom:"0", paddingTop:"20px"}}>REACT 50%</p>
+          <div className="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div className="progress-bar" style={{width: "50%"}}></div>
+          </div>
+
 
         </div>
+          
       </div>
         
 
