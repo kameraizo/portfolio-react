@@ -1,3 +1,23 @@
+const CardPortfolio = (props) => {
+return ( 
+<div className="col-12 col-md-4 mb-4">
+ <div className="card h-100 shadow-sm">
+<img src={props.src} className="card-img-top" alt={props.alt}/>
+<div className="card-body text-center">
+<h2 className="card-title">{props.title} </h2>
+<p>{props.text}</p>
+<a href="#" className="btn btn-primary">voir le site</a>
+</div>
+<div className="card-footer text-center">
+<small className="text-muted">
+{props.real}
+</small>
+</div>
+</div>
+</div>
+);
+}
+
 export default function Portfolio() {
   return (
   <div style={{paddingTop: "56px"}}>
@@ -18,153 +38,54 @@ export default function Portfolio() {
       <div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>
         <div className="row">
           {/*card 1*/}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-              src="/images/fresh-food.jpg"
-              className="card-img-top"
-              alt="Fresh food" 
-              />
-              <div className="card-body text-center">
-                <h2 className="card-title">Fresh food</h2>
-                <p className="card-text">
-                  site de vente de produits frais en ligne
-                </p>
-                <a href="#" className="btn btn-primary">
-                  voir le site
-                </a>
-              </div>
-              <div className="card-footer text-center">
-                <small className="text-muted">
-                  Sites realiser avec PHP ET MySQL
-                </small>
-
-              </div>
-            </div>
-          </div>
+          <CardPortfolio
+          src="/images/fresh-food.jpg"
+          alt="Fresh food"
+          title="Fresh food"
+          text="site de vente de produits frais en ligne"
+          real="Site realiser avec PHP et MySQL"
+          />
           {/*card 2*/}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-              src="/images/restaurant-japonais.jpg"
-              className="card-img-top"
-              alt="Restaurant Akira" 
-              />
-              <div className="card-body text-center">
-                <h2 className="card-title">Restaurant Akira</h2>
-                <p className="card-text">
-                  site de vente de sushi en ligne
-                </p>
-                <a href="#" className="btn btn-primary">
-                  voir le site
-                </a>
-              </div>
-              <div className="card-footer text-center">
-                <small className="text-muted">
-                  Sites realiser avec WordPress
-                </small>
-              </div>
-            </div>
-          </div>
+          <CardPortfolio
+          src="/images/restaurant-japonais.jpg"
+          alt="Restaurant Akira"
+          title="Restaurant Akira"
+          text="Site de vente de sushi en ligne"
+          real="Site realiser avec WORDPRESS"
+          />
+          
           {/*card 3*/}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-              src="/images/espace-bien-etre.jpg"
-              className="card-img-top"
-              alt="Espace bien-etre" 
-              />
-              <div className="card-body text-center">
-                <h2 className="card-title">Espace bien-etre</h2>
-                <p className="card-text">
-                  site d'espace de bien-etre
-                </p>
-                <a href="#" className="btn btn-primary">
-                  voir le site
-                </a>
-              </div>
-              <div className="card-footer text-center">
-                <small className="text-muted">
-                  Sites realiser avec LARAVEL
-                </small>
-              </div>
-            </div>
-          </div>
+          <CardPortfolio
+          src="/images/espace-bien-etre.jpg"
+          alt="Espace bien etre"
+          title="Espace bien etre"  
+          text="Site d'espace bien etre en ligne"
+          real="Site realiser avec Laravel"
+          />
           {/*card 4*/}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-              src="/images/seo.jpg"
-              className="card-img-top"
-              alt="SEO" 
-              />
-              <div className="card-body text-center">
-                <h2 className="card-title">SEO</h2>
-                <p className="card-text">
-                  Amelioration du referencement d'un 
-                  site e-commerce
-                </p>
-                <a href="#" className="btn btn-primary">
-                  voir le site
-                </a>
-              </div>
-              <div className="card-footer text-center">
-                <small className="text-muted">
-                  Sites realiser avec SEO
-                </small>
-              </div>
-            </div>
-          </div>
+          <CardPortfolio
+          src="/images/seo.jpg"
+          alt="SEO"
+          title="SEO"
+          text="Site de e-commerce"
+          real="Site realiser avec SEO"
+          />
           {/*card 5*/}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-              src="/images/coder.jpg"
-              className="card-img-top"
-              alt="Creation d'une API" 
-              />
-              <div className="card-body text-center">
-                <h2 className="card-title">Creation d'une API</h2>
-                <p className="card-text">
-                  Creation d'une API RESTFULL publique
-                </p>
-                <a href="#" className="btn btn-primary">
-                  voir le site
-                </a>
-              </div>
-              <div className="card-footer text-center">
-                <small className="text-muted">
-                  Sites realiser avec SYMFONY
-                </small>
-              </div>
-            </div>
-          </div>
+          <CardPortfolio
+          src="/images/coder.jpg"
+          alt="Creation d'une API"
+          title="Creation d'une API"
+          text="Creation d'une API RESTFULL publique"
+          real="Site realiser avec SYMFONY"
+          />
           {/*card 6*/}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-              src="/images/screens.jpg"
-              className="card-img-top"
-              alt="Maquette d'un site web" 
-              />
-              <div className="card-body text-center">
-                <h2 className="card-title">Maquette d'un site web</h2>
-                <p className="card-text">
-                  creation d'un prototype d'un site
-                </p>
-                <a href="#" className="btn btn-primary">
-                  voir le site
-                </a>
-              </div>
-              <div className="card-footer text-center">
-                <small className="text-muted">
-                  Sites realiser avec FIGMA
-                </small>
-
-              </div>
-
-            </div>
-          </div>
+          <CardPortfolio
+          src="/images/screens.jpg"
+          alt="Maquette d'un site web"
+          title="Maquette d'un site web"
+          text="creation d'un prototype d'un site"
+          real="Site realiser avec Figma"
+          />
 
 
         </div>
