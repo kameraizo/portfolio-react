@@ -1,3 +1,14 @@
+const SkillBar = (props) => {
+return (
+<div style={{marginBottom:"20px"}}>
+    <p style={{marginBottom:"0"}}>{props.pourcentage}</p>
+          <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div className={`progress-bar ${props.color}`} style={props.progress}></div>
+          </div>
+</div>
+);
+}
+
 import { useState, useEffect } from "react"
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
@@ -69,26 +80,31 @@ export default function Home() {
         <div className="col-md-6"> 
           <h2>Mes compètences</h2>
             <hr style={{color:"blue", borderWidth: "3px",}}/>
-            <p style={{marginBottom:"0"}}>HTML.5 90%</p>
-          <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-            <div className="progress-bar bg-danger" style={{width: "90%"}}></div>
-          </div>
-            <p style={{marginBottom:"0", paddingTop:"20px"}}>CSS.3 80%</p>
-          <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-            <div className="progress-bar bg-info" style={{width: "80%"}}></div>
-          </div>
-            <p style={{marginBottom:"0", paddingTop:"20px"}}>JavaScript 70%</p>
-          <div className="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div className="progress-bar bg-warning" style={{width: "70%"}}></div>
-          </div>
-              <p style={{marginBottom:"0", paddingTop:"20px"}}>PHP 2%</p>
-          <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-            <div className="progress-bar bg-success" style={{width: "2%"}}></div>
-          </div>
-              <p style={{marginBottom:"0", paddingTop:"20px"}}>REACT 50%</p>
-          <div className="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-            <div className="progress-bar" style={{width: "50%"}}></div>
-          </div>
+            <SkillBar
+            pourcentage="HTML.5 90%"
+            color="bg-danger"
+            progress={{width: "90%"}}
+            />
+            <SkillBar
+            pourcentage="CSS.3 80%"
+            color="bg-info"
+            progress={{width: "80%"}}
+            />
+           <SkillBar
+           pourcentage="JavaScript 70%"
+           color="bg-warning"
+           progress={{width: "70%"}}
+           />
+            <SkillBar
+            pourcentage="PHP 2%"
+            color="bg-success"
+            progress={{width: "2%"}}
+            />
+            <SkillBar
+            pourcentage="React 50%"
+            color="bg-primary"
+            progress={{width: "50%"}}
+            />
 
 
         </div>
