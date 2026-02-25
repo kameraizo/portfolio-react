@@ -1,4 +1,6 @@
-    const CardServices = (props) => {
+  import { Helmet } from 'react-helmet-async'
+  
+ const CardServices = (props) => {
       return (
         <div className="col-md-4">
           <div className="card h-100 shadow-sm text-center">
@@ -17,6 +19,11 @@
 export default function Services() {
   return (
   <div style={{paddingTop: "56px"}}>
+      <Helmet>
+        <title>services - Déscriptions des prestations</title>
+        <meta name="description" content="Découvrez les services proposés par John Doe : UX Design, développement web et référencement." />
+      </Helmet>
+
     {/*banner*/}
     <section style={{
       backgroundImage: "url('/images/banner.jpg')",

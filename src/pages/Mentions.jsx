@@ -20,6 +20,10 @@ const AccordionItem = (props) => {
 export default function Mentions() {
   return (
     <div style={{paddingTop: "56px"}}>
+       <Helmet>
+          <title>Mentions - Déscriptions des mentions</title>
+          <meta name="description" content="Découvrez les mentions legales de la page" />
+        </Helmet>
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>

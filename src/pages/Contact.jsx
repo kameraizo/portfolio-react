@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import CoordItem from '../components/CoordItem'
 const InputField = (props) => {
   return (
@@ -10,7 +11,11 @@ const InputField = (props) => {
 
 export default function Contact() {
   return (
-    <div style={{paddingTop: "56px"}}>
+  <div style={{paddingTop: "56px"}}>
+        <Helmet>
+            <title>Contact - Prenez contact avec John Doe </title>
+            <meta name="description" content="Prendre contact avec John Doe" />
+        </Helmet>
       <div style={{textAlign: "center"}}>
         <h1><strong>Contact</strong></h1>
         <p>pour me contacter en vue d'un entretien ou d'une future
@@ -54,7 +59,7 @@ export default function Contact() {
             </div>
           </div>
       </div>
-    </div>
+  </div>
         
 
   )

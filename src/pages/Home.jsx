@@ -1,3 +1,6 @@
+  import { Helmet } from 'react-helmet-async'
+
+
 const SkillBar = (props) => {
 return (
 <div style={{marginBottom:"20px"}}>
@@ -11,6 +14,11 @@ return (
 
 import { useState, useEffect } from "react"
 export default function Home() {
+  <Helmet>
+  <title>home - Decouvrez le portfolio de John Doe </title>
+  <meta name="description" content="Découvrez le portfolio de John Doe" />
+  </Helmet>
+
   const [showModal, setShowModal] = useState(false)
   const [githubData, setGithubData] = useState(null)
   useEffect(() => {

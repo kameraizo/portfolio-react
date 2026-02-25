@@ -1,3 +1,4 @@
+  import { Helmet } from 'react-helmet-async'
 const CardPortfolio = (props) => {
 return ( 
 <div className="col-12 col-md-4 mb-4">
@@ -21,6 +22,11 @@ return (
 export default function Portfolio() {
   return (
   <div style={{paddingTop: "56px"}}>
+  <Helmet>
+      <title>Portfolio - Déscriptions des realisations</title>
+      <meta name="description" content="Découvrez les le porfolio de John Doe" />
+  </Helmet>
+
     {/*banner*/}
     <section style={{
       backgroundImage: "url('/images/banner.jpg')",
