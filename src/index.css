@@ -16,3 +16,27 @@ body {
 h1, h2, h3, h4, h5, h6, strong {
   font-weight: 600 !important;
 }
+.nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+footer a:hover i {
+  color: white;
+}
+footer .nav-link:hover {
+  font-weight: 600;
+}
+.btn:hover {
+  filter: brightness(0.85);
+}
+footer .nav-link {
+  transition: all 0.3s ease;
+}
+footer a i {
+  transition: all 0.3s ease;
+}
+
+

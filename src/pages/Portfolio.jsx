@@ -48,12 +48,12 @@ export default function Portfolio() {
               <img 
               src="/images/restaurant-japonais.jpg"
               className="card-img-top"
-              alt="Fresh food" 
+              alt="Restaurant Akira" 
               />
               <div className="card-body text-center">
                 <h2 className="card-title">Restaurant Akira</h2>
                 <p className="card-text">
-                  site de vente de produits frais en ligne
+                  site de vente de sushi en ligne
                 </p>
                 <a href="#" className="btn btn-primary">
                   voir le site
@@ -72,12 +72,12 @@ export default function Portfolio() {
               <img 
               src="/images/espace-bien-etre.jpg"
               className="card-img-top"
-              alt="Fresh food" 
+              alt="Espace bien-etre" 
               />
               <div className="card-body text-center">
                 <h2 className="card-title">Espace bien-etre</h2>
                 <p className="card-text">
-                  site de vente de produits frais en ligne
+                  site d'espace de bien-etre
                 </p>
                 <a href="#" className="btn btn-primary">
                   voir le site
@@ -96,7 +96,7 @@ export default function Portfolio() {
               <img 
               src="/images/seo.jpg"
               className="card-img-top"
-              alt="Fresh food" 
+              alt="SEO" 
               />
               <div className="card-body text-center">
                 <h2 className="card-title">SEO</h2>
@@ -121,7 +121,7 @@ export default function Portfolio() {
               <img 
               src="/images/coder.jpg"
               className="card-img-top"
-              alt="Fresh food" 
+              alt="Creation d'une API" 
               />
               <div className="card-body text-center">
                 <h2 className="card-title">Creation d'une API</h2>
@@ -145,7 +145,7 @@ export default function Portfolio() {
               <img 
               src="/images/screens.jpg"
               className="card-img-top"
-              alt="Fresh food" 
+              alt="Maquette d'un site web" 
               />
               <div className="card-body text-center">
                 <h2 className="card-title">Maquette d'un site web</h2>

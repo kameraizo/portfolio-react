@@ -6,11 +6,10 @@ export default function Footer() {
       <div className="row">
         <div className="col-md-4" style={{color:"white"}}>
           <p>John Doe</p>
-          <p>40 rue Laure Diebold
-              69009 Lyon France
-              10 20 30 40 50 
-              john.doe@gmail.com
-          </p>
+          <p>40 rue Laure Diebold</p>
+            <p>69009 Lyon France</p>  
+              <p>10 20 30 40 50 </p>
+              <p>john.doe@gmail.com</p>
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer nofollow">
           <i className="bi bi-github"></i>
           </a>
@@ -45,22 +44,22 @@ export default function Footer() {
           <p>Mes dernières réalisations</p>
           <ul className="list-unstyled">
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Portfolio">fresh food</NavLink>
+              <NavLink className="nav-link" to="/portfolio">fresh food</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Portfolio">Restaurant Akira</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Restaurant Akira</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Portfolio">Espace bien être</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Espace bien être</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Portfolio">SEO</NavLink>
+              <NavLink className="nav-link" to="/portfolio">SEO</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Portfolio">Création API</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Création API</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Portfolio">Maquette d'un site</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Maquette d'un site</NavLink>
             </li>
           </ul>
 

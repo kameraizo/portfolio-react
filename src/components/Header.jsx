@@ -20,19 +20,19 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Accueil</NavLink>
+              <NavLink className="nav-link text-uppercase" to="/">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services">Services</NavLink>
+              <NavLink className="nav-link text-uppercase" to="/services">Services</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+              <NavLink className="nav-link text-uppercase" to="/portfolio">Portfolio</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">Contact</NavLink>
+              <NavLink className="nav-link text-uppercase" to="/contact">Contact</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/Mentions">Mentions legales</NavLink>
+              <NavLink className="nav-link text-uppercase" to="/Mentions">Mentions legales</NavLink>
             </li>
           </ul>
         </div>
