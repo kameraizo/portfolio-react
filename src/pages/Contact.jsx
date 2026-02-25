@@ -1,8 +1,4 @@
-const CoordItem = (props) => {
-  return ( 
-    <p><i className={props.icon}></i> {props.text}</p>
-  )
-}
+import CoordItem from '../components/CoordItem'
 const InputField = (props) => {
   return (
     <div className="mb-3">

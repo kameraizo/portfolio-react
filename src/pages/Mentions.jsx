@@ -1,3 +1,6 @@
+import CoordItem from '../components/CoordItem'
+import { Helmet } from 'react-helmet-async'
+
 const AccordionItem = (props) => {
   return (
     <div className="accordion-item">
@@ -17,6 +20,9 @@ const AccordionItem = (props) => {
 export default function Mentions() {
   return (
     <div style={{paddingTop: "56px"}}>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <div style={{textAlign: "center"}}>
         <h1><strong>Mentions légales</strong></h1>
         <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
@@ -24,16 +30,18 @@ export default function Mentions() {
       <div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>
         <div className="accordion">
         <AccordionItem id="section1" title="Editeur du site">
-          <p>John Doe</p>
-          <p>40 rue Laure Diebold</p>
-          <p>69009 Lyon</p>
+          <strong><p>John Doe</p></strong>
+          <CoordItem icon="bi bi-pin-map" text="40 rue Laure Diebold" />
+          <CoordItem icon="bi bi-geo-alt" text="69009 Lyon France" />
+          <CoordItem icon="bi bi-telephone" text="10 20 30 40 50" />
+          <CoordItem icon="bi bi-envelope" text="john.doe@gmail.com" />
           </AccordionItem>
           
 
         <AccordionItem id="section2" title="Hébergeur">
           <strong><p>Alwaysdata</p></strong>
           <p>91 rue du faubourdg saint Honoré, 75008 Paris</p>
-          <a href="https://www.alwaysdata.com/">www.alwaysdata.com</a>
+          <CoordItem icon="bi bi-globe" text={<a href="https://www.alwaysdata.com/">www.alwaysdata.com</a>}/>
           </AccordionItem>
 
           <AccordionItem id="section3" title="credits">
