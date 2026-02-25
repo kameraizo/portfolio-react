@@ -34,7 +34,7 @@ export default function Footer() {
               <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Me contacter</NavLink>
+              <NavLink className="nav-link" to="/contact">Me contacter</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/mentions">Mentions lègales</NavLink>
